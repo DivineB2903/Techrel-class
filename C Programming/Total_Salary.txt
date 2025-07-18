@@ -1,0 +1,9 @@
+
+-------------------Employee Details -------------------------
+ID: 3
+Name: Nishant
+Basic Salary: 49000.000000
+DA: 40000.000000
+HRA: 70000.000000
+Tax: 2450.000000
+Total Salary: 156550.000000
