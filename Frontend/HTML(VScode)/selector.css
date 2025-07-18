@@ -1,0 +1,42 @@
+    /* 
+    Types of selector :
+    1. simple  css
+    2. Attribu css
+    3. pseudo  css
+    4. element css
+    5. combina css
+    */
+
+    /* 1.1. SIMPLE CSS */
+
+h1{
+    color: blueviolet;
+    font-family: monospace;
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+ /* 1.2.  ID name */
+
+ #topheading{
+    font-size: 50px;
+ }
+
+ /* 1.3.  ID name */
+
+ #topheading{
+    font-size: 50px;
+ }
+
+ /* 1.4.  universal */
+
+ *{
+    text-decoration: underline;
+ }
