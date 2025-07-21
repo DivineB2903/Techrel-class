@@ -6,6 +6,9 @@ int main()
     float p1, p2, p3, total, disAmt, payAmt;
     char n1[50], n2[50], n3[50];
 
+    FILE *fp;
+    fp = fopen("Bill_Summary.txt","w");
+
     printf("1st product :\nEnter Id : ");
     scanf("%d", &id1);
     printf("Enter name of the product: ");
@@ -32,7 +35,7 @@ int main()
     scanf("%f", &p3);
     printf("Quantity of the product:");
     scanf("%d", &q3);
-
+ 
     total = (p1*q1) + (p2*q2)  + (p3*q3);
 
     if (total > 100000) 
@@ -49,18 +52,18 @@ int main()
 
     payAmt = total - disAmt;
 
-    printf("\n---------------------------BILL SUMMARY--------------------------------------\n");
-    printf("   ID   |      NAME       |     PRICE     |     QUANTITY    |      TOTAL     ");
-    printf("\n%8d|%17s|%15f|%17d|%16f",id1, n1, p1, q1, (p1*q1));
-    printf("\n-----------------------------------------------------------------------------");
-    printf("\n%8d|%17s|%15f|%17d|%16f",id1, n1, p1, q1, (p1*q1));
-    printf("\n-----------------------------------------------------------------------------");
-    printf("\n%8d|%17s|%15f|%17d|%16f",id1, n1, p1, q1, (p1*q1));
-    printf("\n-----------------------------------------------------------------------------");
-    printf("\n\t\t\t                          Total amount : %.2f", total);
-    printf("\n\t\t\t                Discount percentage (%%): %.2f", disper);
-    printf("\n\t\t\t                       Discount amount : %.2f", disAmt);
-    printf("\n\t\t\t                   Total amount to pay : %.2f", payAmt);
+    fprintf(fp,"\n---------------------------BILL SUMMARY--------------------------------------\n");
+    fprintf(fp,"   ID   |      NAME       |     PRICE     |     QUANTITY    |      TOTAL     ");
+    fprintf(fp,"\n%8d|%17s|%15f|%17d|%16f",id1, n1, p1, q1, (p1*q1));
+    fprintf(fp,"\n-----------------------------------------------------------------------------");
+    fprintf(fp,"\n%8d|%17s|%15f|%17d|%16f",id2, n2, p2, q2, (p2*q2));
+    fprintf(fp,"\n-----------------------------------------------------------------------------");
+    fprintf(fp,"\n%8d|%17s|%15f|%17d|%16f",id3, n3, p3, q3, (p3*q3));
+    fprintf(fp,"\n-----------------------------------------------------------------------------");
+    fprintf(fp,"\n                                             Total amount : %.2f", total);
+    fprintf(fp,"\n                                 Discount percentage (%%): %.2f", disper);
+    fprintf(fp,"\n                                          Discount amount : %.2f", disAmt);
+    fprintf(fp,"\n                                      Total amount to pay : %.2f", payAmt);
     
 
 }

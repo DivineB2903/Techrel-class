@@ -1,9 +1,11 @@
+
+
 #include<stdio.h>
 int main()
 {
     char ch;
     printf("Enter anything : ");
-    scanf("   %c", &ch);
+    scanf("%c", &ch);
 
     if(ch >= 65 && ch <= 90){
         printf("capital letter");

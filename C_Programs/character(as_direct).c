@@ -3,7 +3,7 @@ int main()
 {
     char ch;
     printf("Enter anything : ");
-    scanf("%s", &ch);
+    scanf("%c", &ch);
 
     if(ch >= 'A' && ch <= 'Z'){
         printf("capital letter");
