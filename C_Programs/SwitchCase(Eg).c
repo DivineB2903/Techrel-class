@@ -16,7 +16,7 @@ int main()
         break;
         case 3 : printf("Multiplication is %d ", (a * b));
         break;
-        case 4 : printf("Division is %d ", (a / b));
+        case 4 : printf("Division is %f ", (a / b));
         break;
         Default : printf("Entered choice is invalid.");
         break; 
