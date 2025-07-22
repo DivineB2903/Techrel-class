@@ -18,12 +18,12 @@ int main() {
     scanf("%f %f", &winL, &winB);  
 
     win_ar = winL * winB;
+    float rooffloor = 2*roomB*roomL;
+    float roof = roomB*roomL;
 
-    printf("The surface area of the room: %f\n", Sarea);
-    printf("The surface area of the door: %f\n", door_ar);
-    printf("The surface area of 2 windows: %f\n", 2 * win_ar);
+    printf("The area to be whitewashed is: %f\n", roof);
 
-    printf("The area to be whitewashed is: %f\n", Sarea - (2 * win_ar + door_ar));
+    printf("The area to be painted is: %f\n", Sarea - (2 * win_ar + door_ar + rooffloor));
 
     return 0;
 }
