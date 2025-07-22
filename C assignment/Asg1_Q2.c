@@ -9,7 +9,7 @@ int main()
     scanf("%f", &h);
 
     printf("The surface area of cylinder is : %f ", (2*3.14*r*r) + (2*3.14*h));
-    printf("The surface area of cylinder is : %f ", 3.14*r*r*h);
+    printf("The volume of cylinder is : %f ", 3.14*r*r*h);
 
     return 0;
 

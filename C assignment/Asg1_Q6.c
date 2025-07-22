@@ -11,7 +11,7 @@ int main()
     scanf("%f", &h);
 
     printf("The surface area of cuboid is : %f", 2*((l*b) + (b*h) + (h*l)));
-    printf("The Harmonic mean is : %f", l*b*h);
+    printf("The volume is : %f", l*b*h);
 
     return 0;
 

@@ -14,7 +14,7 @@ int main() {
     else
         max = c;
 
-    printf("Max using if-else ladder: %d\n", max);
+    printf("Max is : %d\n", max);
 
     return 0;
 }
