@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int amount, ten, five, one;
+    int amt, ten, five, one;
  
     printf("Enter the amount to be withdrawn: ");
-    scanf("%d", &amount);
+    scanf("%d", &amt);
 
-    ten = amount / 10;
-    amount = amount % 10;
+    ten = amt / 10;
+    amt = amt % 10;
 
-    five = amount / 5;
-    amount = amount % 5;
+    five = amt / 5;
+    amt = amt % 5;
 
-    one = amount;
+    one = amt;
 
     printf("10 Rupee notes: %d\n", ten);
     printf("5 Rupee notes : %d\n", five);
